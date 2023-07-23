@@ -32,7 +32,7 @@ Pipenv and poetry start to be de-facto standards in the Python world for
 
 ## What's the problem with docker files
 
-Additionally, to a quick migrating guide, we also include a migration to install a software
+Additionally to the migration examples, we include examples on Python software packaging
 in a docker image using the abovementioned package managers as installers.
 
 The migration process can be verified automatically by running respectively:
