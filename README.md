@@ -7,10 +7,10 @@ Supported dependency managers:
 - [vanilla pip](https://pip.pypa.io/en/stable/)
   - [docker file for vanilla pip](./Dockerfile.vanilla-pip)
 - [poetry](https://python-poetry.org/)
-  - [migration script](./migrate_poetry.sh)
+  - [migration script from vanilla pip](./migrate_poetry.sh)
   - [docker file](./Dockerfile.poetry)
 - [pipenv](https://pipenv.pypa.io/en/latest/)
-  - [migration script](./migrate_pipenv.sh)
+  - [migration script from vanilla pip](./migrate_pipenv.sh)
   - [docker file](./Dockerfile.pipenv)
 
 ## Why This Project?
