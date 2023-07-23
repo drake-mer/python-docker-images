@@ -5,20 +5,24 @@ Demonstrate migration from `requirements.txt` to pipenv or poetry + docker packa
 Supported dependency managers:
 
 - [poetry](https://python-poetry.org/)
+  - [migration script](./migrate_poetry.sh)
+  - [docker file](./Dockerfile.poetry)
 - [pipenv](https://pipenv.pypa.io/en/latest/)
+  - [migration script](./migrate_pipenv.sh)
+  - [docker file](./Dockerfile.pipenv)
 
 ## Why This Project?
 
 Aim to solve two problems:
 
 1. Migrate from [`requirements.txt`](https://learnpython.com/blog/python-requirements-file/)
-to a well known package manager
-2. packaging a project using one of this package manager with docker
+to a well-known package manager
+2. packaging a project using one of these package managers with docker
 
 ## What's the problem with `requirements.txt`
 
 While very efficient, the file `requirements.txt`
-does not allow to express dependency constraint and to solve them
+does not allow expressing dependency constraints and solving them
 automatically, everything is done manually. 
 
 Pipenv and poetry start to be de-facto standards in the Python world for
@@ -26,13 +30,13 @@ Pipenv and poetry start to be de-facto standards in the Python world for
 
 ## What's the problem with docker files
 
-Additionally to a quick migrating guide, we include also a migration to install a software
-in a docker image using the abovementionned package managers as installer.
+Additionally, to a quick migrating guide, we also include a migration to install a software
+in a docker image using the abovementioned package managers as installers.
 
 The migration process can be verified automatically by running respectively:
 
-- batch test.sh pipenv
-- batch test.sh poetry
+- [bash test.sh pipenv](./test.sh)
+- [bash test.sh poetry](./test.sh)
 
 This will generate the dependency lock file once, and build the corresponding image.
 
