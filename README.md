@@ -4,6 +4,8 @@ Demonstrate migration from `requirements.txt` to pipenv or poetry + docker packa
 
 Supported dependency managers:
 
+- [vanilla pip](https://pip.pypa.io/en/stable/)
+  - [docker file for vanilla pip](./Dockerfile.vanilla-pip)
 - [poetry](https://python-poetry.org/)
   - [migration script](./migrate_poetry.sh)
   - [docker file](./Dockerfile.poetry)
