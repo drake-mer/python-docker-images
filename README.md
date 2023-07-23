@@ -1,5 +1,7 @@
 # Python Docker Images
 
+Demonstrate migration from `requirements.txt` to pipenv or poetry + docker packaging for Python applications.
+
 Supported dependency managers:
 
 - [poetry](https://python-poetry.org/)
